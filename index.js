@@ -47,7 +47,8 @@ module.exports = function (opts) {
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-babel', err, {
 				fileName: file.path,
-				showProperties: false
+				showProperties: false,
+				showStack: false
 			}));
 		}
 
